@@ -1,17 +1,23 @@
 .header
-	background-color #373c3f
-	height 97px
-	flex-grow 1
-	+smallScreen(640px)
-		height 74px
-	+smallScreen(320px)
-		height 37px
-	
-	.navigation
-		background-color #202529
-		display none
-	+smallScreen(640px)
-		display block
-		width 82px
-	+smallScreen(320px)
-		width 40px
+  background-color #373c3f
+  height 97px
+  @media(max-width 979px)
+    height 74px
+  @media (max-width 639px)
+    height 37px
+    
+  nav
+    width 590px
+    @media (max-width 979px)
+      width 558px
+    @media (max-width 639px)
+      width 280px
+  
+  .navigation
+    background-color #202529
+    display none
+    @media (max-width 979px)
+      display block
+      width 82px
+    @media (max-width 639px)
+      width 40px

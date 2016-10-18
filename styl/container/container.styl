@@ -1,10 +1,10 @@
 .container
-	display flex
-	flex-direction column
-	width 1024px
-	+smallScreen(980px)
-		width 980px
-	+smallScreen(640px)
-		width 640px
-	+smallScreen(320px)
-		width 320px
+  display flex
+  flex-direction column
+  width 1024px
+  @media (max-width 1023px)
+    width 980px
+  @media (max-width 979px)
+    width 640px
+  @media (max-width 639px)
+    width 320px

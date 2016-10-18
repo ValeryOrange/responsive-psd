@@ -1,12 +1,12 @@
 .photos
 	flex-direction row
 	height 297px
-	+smallScreen(980px)
+	@media(max-width 1023px)
 		height 283px
-	+smallScreen(640px)
+	@media (max-width 979px)
 		flex-direction column
 		height 1660px
-	+smallScreen(320px)
+	@media(max-width 639px)
 		height 830px
 		
 	.left-box
